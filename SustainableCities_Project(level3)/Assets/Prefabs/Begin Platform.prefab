@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4848888100974509501}
+  - component: {fileID: 6041854287487206519}
   - component: {fileID: 4848888100974509442}
   - component: {fileID: 4848888100974509443}
   - component: {fileID: 4848888100974509440}
@@ -19,15 +19,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4848888100974509501
+--- !u!4 &6041854287487206519
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4848888100974509441}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.9, y: 67.4, z: -55.4}
+  m_LocalRotation: {x: 0.17486537, y: 0.012827399, z: -0.0038526328, w: -0.98450124}
+  m_LocalPosition: {x: 2.6917853, y: -10.075712, z: 12.845655}
   m_LocalScale: {x: 42.8, y: 1, z: 22.800003}
   m_ConstrainProportionsScale: 0
   m_Children: []
