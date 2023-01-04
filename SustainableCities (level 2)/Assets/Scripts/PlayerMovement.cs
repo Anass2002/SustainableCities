@@ -4,23 +4,39 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float movementSpeed = 5f;
-    private Rigidbody rb;
-    // Start is called before the first frame update
+    Animator animator = null;
+    CharacterController cc = null;
+    [SerializeField]
+    float movementSpeed = 5f;
+    [SerializeField]
+    float rotationSpeed = 100f;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        this.cc = this.GetComponent<CharacterController>();
+        this.animator = this.GetComponent<Animator>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3();
 
-        Vector3 move = new Vector3(moveX, 0, moveZ);
-        move = transform.TransformDirection(move);
-        move *= movementSpeed;
-        rb.AddForce(move);
+        if (Input.GetKey("up") == true)
+            movement += transform.forward;
+        if (Input.GetKey("down") == true)
+            movement -= transform.forward;
+        if (Input.GetKey("left") == true)
+            transform.Rotate(Vector3.up, -1f * this.rotationSpeed * Time.deltaTime);
+        if (Input.GetKey("right") == true)
+            transform.Rotate(Vector3.up, this.rotationSpeed * Time.deltaTime);
+
+        this.cc.Move(movement.normalized * this.movementSpeed * Time.deltaTime);
+
+        if (movement.sqrMagnitude > 0)
+        {
+            this.animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            this.animator.SetBool("IsRunning", false);
+        }
     }
 }
