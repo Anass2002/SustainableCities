@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Trash
   - TrashBin
+  - metal
+  - plastic
+  - glass
+  - paper
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Trash
   - 
   - 
   - 
