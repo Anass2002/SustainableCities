@@ -352,8 +352,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/InfiniteMovement.cs"
+"Assets/Scripts/AddScriptToChildren.cs"
+"Assets/Scripts/FollowTarget.cs"
+"Assets/Scripts/MoveAndDisappear.cs"
 "Assets/Scripts/PauseResume.cs"
+"Assets/Scripts/Pickup.cs"
+"Assets/Scripts/ResetOnCollision.cs"
+"Assets/Scripts/RestartButton.cs"
+"Assets/Scripts/RotateAround.cs"
+"Assets/Scripts/RotateX.cs"
+"Assets/Scripts/ScoreManager.cs"
 -langversion:9.0
 
 /deterministic
