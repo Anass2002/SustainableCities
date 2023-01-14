@@ -10,6 +10,18 @@ TagManager:
   - plastic
   - glass
   - paper
+  - TrashbinM
+  - TrashbinP
+  - TrashbinG
+  - TrashbinPa
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
   layers:
   - Default
   - TransparentFX
